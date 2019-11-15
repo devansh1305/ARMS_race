@@ -2,10 +2,8 @@ all:	clean build
 
 build:
 	as test1.s -o test1.o
-	ld test1.o -o test1
-
+	gcc -o test1 -nostartfiles test1.o
 clean:
 	rm -f *.o
-	rm -f test0
 
 
