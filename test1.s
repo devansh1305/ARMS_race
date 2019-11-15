@@ -1,12 +1,10 @@
 .section .text
-message: .asciz "Hello,ARM\n"
 .global _start
-.balign 4
 _start:
 	push {lr}
+	mov r2,#2
 	mov r3,#3
-	mov r0,#3
-	bl printf
+	add r0,r2,r3
 	bl exit
 
 
