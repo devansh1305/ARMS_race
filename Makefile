@@ -1,7 +1,7 @@
 all:	clean build
 
 build:
-	gcc -o test5 test5.s -g
+	gcc -o test6 test6.s -g
 clean:
 	rm -f *.o
 
